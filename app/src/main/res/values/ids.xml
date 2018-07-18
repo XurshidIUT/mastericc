@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="resultCount" type="id" />
+    <item name="problem" type="id" />
+    <item name="levelR" type="id" />
+    <item name="bt0" type="id" />
+    <item name="bterase" type="id" />
+    <item name="minus" type="id" />
+    <item name="btclean" type="id" />
+    <item name="answerTrue" type="id" />
+</resources>

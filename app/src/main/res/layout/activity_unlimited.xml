@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:drawable="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"/>
+
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:padding="8dp"
+        android:text="1"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd" />
+
+    <Button
+        android:id="@+id/bt2"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        app:layout_constraintTop_toTopOf="@+id/gd" />
+
+    <Button
+        android:id="@+id/bt3"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd" />
+
+    <Button
+        android:id="@+id/bt4"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="4"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd1" />
+
+    <Button
+        android:id="@+id/bt5"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@+id/bt6"
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toTopOf="@+id/gd1" />
+
+    <Button
+        android:id="@+id/bt6"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd1" />
+
+    <Button
+        android:id="@+id/bt7"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="7"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd2" />
+
+    <Button
+        android:id="@+id/bt8"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/bt9"
+        app:layout_constraintStart_toEndOf="@+id/bt7"
+        app:layout_constraintTop_toTopOf="@+id/gd2" />
+
+    <Button
+        android:id="@+id/bt9"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd2" />
+
+    <Button
+        android:id="@+id/btC"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="C"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd3" />
+
+    <Button
+        android:id="@+id/bt0"
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/btequal"
+        app:layout_constraintStart_toEndOf="@+id/btC"
+        app:layout_constraintTop_toTopOf="@+id/gd3" />
+
+    <Button
+        android:id="@+id/btequal"
+
+        style="@style/AppTheme.GameTheme"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:onClick="onClick"
+        android:text="="
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickProgressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+</android.support.constraint.ConstraintLayout>
